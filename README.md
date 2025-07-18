@@ -1,2 +1,2 @@
-# estudos
-Este repositorio foi feito para mostrar minha trajetoria na carreira
+# Estudos - Hederson Rigonatti
+Este repositorio foi feito para mostrar minha trajetoria na carreira.
