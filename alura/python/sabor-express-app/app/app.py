@@ -2,6 +2,8 @@
 
 import os
 
+restaurantes = ["pizza", "sushi"]
+
 def exibir_titulo():
     print("""
       ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -31,22 +33,60 @@ def finalizar_app():
     print("Finalizando app")
 
 
-def escolher_opcao():
-    opcao_escolhida = int(input("Escolha uma opção: "))
+def voltar_menu():
+    input("Digite uma tecla para voltar ao menu: ")
+    main()
 
-    if opcao_escolhida == 1:
-        print("Cadastrar restaurante.")
-    elif opcao_escolhida == 2:
-        print("listar restaurantes")
-    elif opcao_escolhida == 3:
-        print("Ativar restaurante")
-    elif opcao_escolhida == 4:
-        finalizar_app()
-    else:
-        print("Numero invalido")
+
+def opcao_invalida():
+    print("Opcao invalida!")
+    voltar_menu()
+
+
+def exibir_subtitulo(texto):
+    os.system("clear")
+    print(texto)
+    print()
+
+
+def cadastrar_restaurante():
+    exibir_subtitulo("Cadastro de novos restaurantes")
+    nome_restaurante = str(input("Digite o nome do restaurante que deseja cadastrar"))
+    restaurantes.append(nome_restaurante)
+
+    print(f"O restaurante {nome_restaurante} foi cadastrado com sucesso!")
+
+    voltar_menu()
+
+
+def listar_restaurantes():
+    exibir_subtitulo("Listando restaurantes")
+    
+    for restaurante in restaurantes:
+        print(restaurante)
+
+        voltar_menu()
+
+def escolher_opcao():
+    try:
+        opcao_escolhida = int(input("Escolha uma opção: "))
+
+        if opcao_escolhida == 1:
+            cadastrar_restaurante()
+        elif opcao_escolhida == 2:
+            listar_restaurantes()
+        elif opcao_escolhida == 3:
+            print("Ativar restaurante")
+        elif opcao_escolhida == 4:
+            finalizar_app()
+        else:
+            opcao_invalida()
+    except:
+        opcao_invalida()
 
 
 def main():
+    os.system("clearc")
     exibir_titulo()
     exibir_opcoes()
     escolher_opcao()
