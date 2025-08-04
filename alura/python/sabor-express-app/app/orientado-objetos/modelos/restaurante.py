@@ -8,10 +8,11 @@ class Restaurante:
 
 
     def __str__(self):
-        return f"{self.nome} | {self.categoria}"
+        return f"{self._nome} | {self._categoria}"
     
-
-    def listar_restaurantes():
+    
+    @classmethod
+    def listar_restaurantes(cls):
         print(f"{'Restaurante'.ljust(25)} | {'Categoria'.ljust(25)} | {'Ativo'}")
         for restaurante in Restaurante.restaurantes:
             print(f"{restaurante._nome.ljust(25)} | {restaurante._categoria.ljust(25)} | {restaurante.ativo}")
