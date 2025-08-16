@@ -1,4 +1,4 @@
-#!/home/hederson/Documents/github/estudos/alura/python/sabor-express-app/app/ambiente-virtual/venv/bin/python
+#!/home/hederson/Documents/github/estudos/alura/python/sabor-express-app/app/orientado-objetos/venv/bin/python3.12
 # -*- coding: utf-8 -*-
 import re
 import sys

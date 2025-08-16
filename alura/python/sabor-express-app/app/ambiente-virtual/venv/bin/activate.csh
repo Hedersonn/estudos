@@ -9,7 +9,7 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV /home/hederson/Documents/github/estudos/alura/python/sabor-express-app/app/ambiente-virtual/venv
+setenv VIRTUAL_ENV /home/hederson/Documents/github/estudos/alura/python/sabor-express-app/app/orientado-objetos/venv
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/"bin":$PATH"
