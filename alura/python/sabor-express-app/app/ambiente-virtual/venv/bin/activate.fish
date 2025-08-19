@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV /home/hederson/Documents/github/estudos/alura/python/sabor-express-app/app/orientado-objetos/venv
+set -gx VIRTUAL_ENV /home/hederson/Documents/github/estudos/alura/python/sabor-express-app/app/ambiente-virtual/venv
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/"bin $PATH
