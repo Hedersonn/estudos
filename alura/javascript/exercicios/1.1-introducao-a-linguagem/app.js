@@ -38,5 +38,5 @@ let idade2 = prompt("Digite sua idade");
 // 10 Agora, para validar a idade que capturamos no desafio 09, caso a idade seja maior ou igual que 18, exiba um alerta com a mensagem "Pode tirar a habilitação!".
 
 if (idade2 <= 18) {
-    alert("Pode tirar habilitação!")
+    alert("Pode tirar habilitação!");
 }
