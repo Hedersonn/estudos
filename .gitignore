@@ -1,1 +1,30 @@
+# Python
 __pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+*.venv
+env/
+venv/
+ENV/
+.venv/
+
+# Java / IntelliJ / IDEs
+*.iml
+*.ipr
+*.iws
+.idea/
+out/
+target/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Dependências
+node_modules/
+
