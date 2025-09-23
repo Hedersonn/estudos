@@ -6,7 +6,7 @@ public class Calculadora {
     }
 
     public static void main(String[] args) {
-        Calculadora n1 = new Calculadora();
-        System.out.println(n1.dobro(4));
+        Calculadora calculadora = new Calculadora();
+        System.out.println(calculadora.dobro(4));
     }
 }
