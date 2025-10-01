@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class ContaBancaria {
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
         String nome = "Hederson Mendes Rigonatii";
